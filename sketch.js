@@ -6,7 +6,7 @@ function setup() {
   myParagraph = createP("html");
   myParagraph.position(0, 0);
   button = createButton("Press")
-//   button.mouseClicked(makeRed);
+  button.mouseClicked(makeRed);
 //   myParagraph.mouseClicked(makeRed);
 }
 
@@ -18,9 +18,9 @@ function draw() {
 //   myParagraph.style("color", "red");
 // }
 
-// function makeRed() {
-//   myParagraph.style("color", "red");
-// }
+function makeRed() {
+  myParagraph.style("color", "red");
+}
 
 
 /*
