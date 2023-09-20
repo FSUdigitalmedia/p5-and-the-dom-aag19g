@@ -1,19 +1,26 @@
 var myParagraph;
+let button;
 
 function setup() {
    createCanvas(400, 400);
   myParagraph = createP("html");
   myParagraph.position(0, 0);
-  myParagraph.mouseClicked(makeRed);
+  button = createButton("Press")
+//   button.mouseClicked(makeRed);
+//   myParagraph.mouseClicked(makeRed);
 }
 
 function draw() {
   myParagraph.position(mouseX, mouseY);
 }
 
-function makeRed() {
-  myParagraph.style("color", "red");
-}
+// function makeRed() {
+//   myParagraph.style("color", "red");
+// }
+
+// function makeRed() {
+//   myParagraph.style("color", "red");
+// }
 
 
 /*
