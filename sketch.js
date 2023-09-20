@@ -1,18 +1,20 @@
 var myParagraph;
 
 function setup() {
+   createCanvas(400, 400);
   myParagraph = createP("html");
   myParagraph.position(0, 0);
   myParagraph.mouseClicked(makeRed);
 }
 
 function draw() {
-  myParagraph.position(frameCount % 200, 0);
+  myParagraph.position(mouseX, mouseY);
 }
 
 function makeRed() {
   myParagraph.style("color", "red");
 }
+
 
 /*
 
