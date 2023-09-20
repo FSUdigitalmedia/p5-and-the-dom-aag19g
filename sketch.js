@@ -1,17 +1,20 @@
 var myParagraph;
 let button;
+var img;
 
 function setup() {
-   createCanvas(400, 400);
+   createCanvas(1000, 1000);
   myParagraph = createP("html");
   myParagraph.position(0, 0);
   button = createButton("Press")
   button.mouseClicked(makeRed);
 //   myParagraph.mouseClicked(makeRed);
+   img = loadImage('dog.jpg')
 }
 
 function draw() {
   myParagraph.position(mouseX, mouseY);
+  image(img, 0, 0);
 }
 
 // function makeRed() {
