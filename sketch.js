@@ -1,9 +1,10 @@
 var myParagraph;
 let button;
 var img;
+var slider;
 
 function setup() {
-   createCanvas(1000, 1000);
+   createCanvas(400, 400);
   myParagraph = createP("html");
   myParagraph.position(0, 0);
   button = createButton("Press")
@@ -11,11 +12,14 @@ function setup() {
 //   myParagraph.mouseClicked(makeRed);
    img = loadImage('dog.jpg')
    button.mouseClicked(changeSize)
+
+   slider = createSlider(10, 100, 86);
 }
 
 function draw() {
-  myParagraph.position(mouseX, mouseY);
-  image(img, 0, 0);
+//   myParagraph.position(mouseX, mouseY);
+myParagraph(100, 100, slider.value(), slider.value());
+//   image(img, 0, 0);
 }
 
 // function makeRed() {
@@ -26,10 +30,10 @@ function draw() {
 //   myParagraph.style("color", "red");
 // }
 
-function changeSize() {
-   background("white")
-     img.resize(500, 500);
-   }
+// function changeSize() {
+//    background("white")
+//      img.resize(500, 500);
+//    }
 
 /*
 
