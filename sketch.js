@@ -7,9 +7,10 @@ function setup() {
   myParagraph = createP("html");
   myParagraph.position(0, 0);
   button = createButton("Press")
-  button.mouseClicked(makeRed);
+//   button.mouseClicked(makeRed);
 //   myParagraph.mouseClicked(makeRed);
    img = loadImage('dog.jpg')
+   button.mouseClicked(changeSize)
 }
 
 function draw() {
@@ -21,10 +22,14 @@ function draw() {
 //   myParagraph.style("color", "red");
 // }
 
-function makeRed() {
-  myParagraph.style("color", "red");
-}
+// function makeRed() {
+//   myParagraph.style("color", "red");
+// }
 
+function changeSize() {
+   background("white")
+     img.resize(500, 500);
+   }
 
 /*
 
